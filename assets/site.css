@@ -62,10 +62,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 
 .rise { animation: rise .8s var(--ease) both; }
 .rise-2 { animation-delay: .1s; } .rise-3 { animation-delay: .2s; } .rise-4 { animation-delay: .3s; }
-@keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+/* Slide only, never hidden: text stays readable even if the animation is slow to run. */
+@keyframes rise { from { transform: translateY(12px); } to { transform: none; } }
 .bubble { animation: pop .55s var(--spring) both; }
 .b2 { animation-delay: .6s; } .b3 { animation-delay: 1.05s; } .b4 { animation-delay: 1.5s; }
-@keyframes pop { from { opacity: 0; transform: translateY(6px) scale(.97); } to { opacity: 1; transform: none; } }
+@keyframes pop { from { transform: translateY(6px) scale(.97); } to { transform: none; } }
 
 /* FAQ accordion */
 details.faq > summary { list-style: none; cursor: pointer; }
