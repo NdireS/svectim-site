@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SVECTIM | AI that works where you work</title>
+<meta name="description" content="SVECTIM helps Kenyan organisations put AI to work: WhatsApp assistants, payment follow-up, private offline AI, online campuses and staff training, with measured results.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<!-- shortcut: Tailwind play CDN is for development; compile Tailwind before going live -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/tw-config.js"></script>
+<link rel="stylesheet" href="assets/liquid-glass.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header data-nav class="site-nav sticky top-0 z-40" data-preset="daylight">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-4 sm:px-8" aria-label="Main">
+    <a href="index.html" class="btn flex items-baseline gap-0.5 font-sans text-[20px] tracking-[0.04em]" aria-label="SVECTIM home">
+      <span class="font-medium text-muted">S</span><span class="font-semibold text-ink">VECT</span><span class="font-medium text-muted">IM</span>
+    </a>
+    <div class="hidden items-center gap-7 text-[15px] text-ink-2 lg:flex">
+      <a class="lnk hover:text-ink" href="#services">Services</a>
+      <a class="lnk hover:text-ink" href="#how">How we work</a>
+      <a class="lnk hover:text-ink" href="courses.html">AI courses</a>
+      <a class="lnk hover:text-ink" href="#about">About</a>
+      <a class="lnk hover:text-ink" href="#faq">FAQ</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="btn rounded-btn bg-brand px-4 py-2.5 whitespace-nowrap text-[14px] font-medium text-white shadow-soft hover:bg-brand-600 active:bg-brand-700"><span class="sm:hidden">Free AI scan</span><span class="hidden sm:inline">Book a free AI scan</span></a>
+      <details data-menu class="relative lg:hidden">
+        <summary class="btn grid h-10 w-10 cursor-pointer place-items-center rounded-btn border border-line bg-white hover:bg-paper active:bg-brand-50" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 5h14M2 9h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </summary>
+        <div class="absolute right-0 mt-3 flex w-56 flex-col rounded-card border border-line bg-white p-2 text-[15px] shadow-raised">
+          <a class="rounded-btn px-3 py-2 hover:bg-paper active:bg-brand-50" href="#services">Services</a>
+          <a class="rounded-btn px-3 py-2 hover:bg-paper active:bg-brand-50" href="#how">How we work</a>
+          <a class="rounded-btn px-3 py-2 hover:bg-paper active:bg-brand-50" href="courses.html">AI courses</a>
+          <a class="rounded-btn px-3 py-2 hover:bg-paper active:bg-brand-50" href="#about">About</a>
+          <a class="rounded-btn px-3 py-2 hover:bg-paper active:bg-brand-50" href="#faq">FAQ</a>
+          <a class="rounded-btn px-3 py-2 hover:bg-paper active:bg-brand-50" href="#contact">Contact</a>
+        </div>
+      </details>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="mesh -mt-[73px] overflow-hidden pt-[73px]">
+  <div class="relative z-10 mx-auto grid max-w-6xl items-center gap-14 px-5 pb-20 pt-14 sm:px-8 md:grid-cols-[1.1fr_.9fr] md:pb-28 md:pt-20">
+    <div>
+      <p class="label rise text-brand">AI consultancy · Nairobi, Kenya</p>
+      <h1 class="rise rise-2 mt-5 text-[42px] sm:text-[56px] lg:text-[64px]">AI that works where you work.</h1>
+      <p class="rise rise-3 mt-6 max-w-xl text-[18px] text-ink-2">We set up AI that answers your customers on WhatsApp, follows up unpaid invoices and trains your staff to use it well. Then we measure what changed and report it to you every month.</p>
+      <div class="rise rise-4 mt-9 flex flex-wrap items-center gap-3">
+        <a href="#contact" class="btn rounded-btn bg-brand px-6 py-3.5 font-medium text-white shadow-raised hover:bg-brand-600 active:bg-brand-700">Book a free AI scan</a>
+        <a href="#how" class="btn rounded-btn border border-line bg-white px-6 py-3.5 font-medium text-ink hover:bg-paper active:bg-brand-50">How a pilot works</a>
+      </div>
+      <p class="rise rise-4 mt-5 text-[14px] text-muted">A free two-page report on where AI can save your organisation time and money.</p>
+    </div>
+
+    <figure class="glass relative mx-auto w-full max-w-[380px] rounded-card p-4 shadow-raised" data-preset="daylight" aria-label="Example of a SVECTIM WhatsApp assistant replying to a customer">
+      <div class="flex items-center gap-3 border-b border-line/80 px-2 pb-3">
+        <div class="grid h-9 w-9 place-items-center rounded-full bg-brand text-[13px] font-semibold text-white">UD</div>
+        <div class="leading-tight"><p class="text-[14px] font-semibold">Umoja Dental</p><p class="text-[12px] text-muted">WhatsApp assistant · online</p></div>
+        <span class="label ml-auto rounded-btn border border-line bg-white/70 px-2 py-1 text-[10px] text-muted">Example</span>
+      </div>
+      <div class="flex flex-col gap-2.5 px-1 py-4 text-[14px] leading-snug">
+        <p class="bubble max-w-[80%] self-end rounded-card rounded-br-sm bg-brand px-3.5 py-2.5 text-white">Habari, do you have a slot for cleaning on Saturday?<span class="mt-1 block text-right text-[11px] text-white/70">9:41 pm</span></p>
+        <p class="bubble b2 max-w-[85%] rounded-card rounded-bl-sm border border-line bg-white px-3.5 py-2.5">Yes. Saturday has 10:00 and 11:30. Cleaning is KSh 3,500. Which time suits you?<span class="mt-1 block text-right text-[11px] text-muted">9:41 pm</span></p>
+        <p class="bubble b3 max-w-[80%] self-end rounded-card rounded-br-sm bg-brand px-3.5 py-2.5 text-white">11:30 please<span class="mt-1 block text-right text-[11px] text-white/70">9:42 pm</span></p>
+        <p class="bubble b4 max-w-[85%] rounded-card rounded-bl-sm border border-line bg-white px-3.5 py-2.5">Booked for Saturday 11:30. Our receptionist will confirm in the morning.<span class="mt-1 block text-right text-[11px] text-muted">9:42 pm</span></p>
+      </div>
+      <div class="flex items-center justify-between rounded-btn bg-brand-50 px-3.5 py-2.5 text-[13px]">
+        <span class="text-ink-2">First reply time</span>
+        <span class="font-mono font-medium text-brand-700">under 1 minute</span>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- THE GAP -->
+<section class="border-y border-line bg-white">
+  <div class="mx-auto max-w-6xl px-5 py-16 sm:px-8 md:py-20">
+    <div class="grid gap-10 md:grid-cols-[.9fr_1.1fr]">
+      <div>
+        <p class="label text-brand">The gap we close</p>
+        <h2 class="mt-4 text-[30px] sm:text-[38px]">Most organisations have tried AI. Few can say what it has done for them.</h2>
+      </div>
+      <dl class="divide-y divide-line border-y border-line">
+        <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-6"><dt class="font-semibold">Enquiries wait overnight</dt><dd class="text-muted">Customers message after hours and buy from whoever answers first.</dd></div>
+        <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-6"><dt class="font-semibold">Money sits in unpaid invoices</dt><dd class="text-muted">Following up by hand is slow, awkward and easy to forget.</dd></div>
+        <div class="grid gap-1 py-5 sm:grid-cols-[14rem_1fr] sm:gap-6"><dt class="font-semibold">Staff use AI without a plan</dt><dd class="text-muted">People paste client data into free tools with no policy and no training.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="scroll-mt-20">
+  <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-24">
+    <div class="flex flex-wrap items-end justify-between gap-6">
+      <div>
+        <p class="label text-brand">Services</p>
+        <h2 class="mt-4 max-w-xl text-[30px] sm:text-[40px]">Three ways we put AI to work</h2>
+      </div>
+      <p class="max-w-sm text-muted">Start with one problem. Add more once the first one shows results.</p>
+    </div>
+
+    <div class="mt-12 grid gap-5 lg:grid-cols-3">
+      <article class="card flex flex-col rounded-card border border-brand/30 bg-white p-7 shadow-raised">
+        <div class="flex items-center justify-between gap-3">
+          <p class="label text-brand">SVECTIM Business</p>
+          <span class="label rounded-btn bg-brand-50 px-2 py-1 text-[10px] text-brand-700">Start here</span>
+        </div>
+        <h3 class="mt-4 text-[24px]">AI automation and staff training</h3>
+        <ul class="mt-5 flex flex-col gap-2.5 text-[15px] text-ink-2">
+          <li class="flex gap-3"><span class="mt-[11px] h-1 w-3 shrink-0 bg-brand" aria-hidden="true"></span>WhatsApp assistants that answer, book and hand over to your staff</li>
+          <li class="flex gap-3"><span class="mt-[11px] h-1 w-3 shrink-0 bg-brand" aria-hidden="true"></span>Invoice and payment reminders linked to M-Pesa</li>
+          <li class="flex gap-3"><span class="mt-[11px] h-1 w-3 shrink-0 bg-brand" aria-hidden="true"></span>Monthly business reports, produced automatically</li>
+          <li class="flex gap-3"><span class="mt-[11px] h-1 w-3 shrink-0 bg-brand" aria-hidden="true"></span>Adverts, posters and website refreshes in a monthly bundle</li>
+          <li class="flex gap-3"><span class="mt-[11px] h-1 w-3 shrink-0 bg-brand" aria-hidden="true"></span>Half-day AI training for your team</li>
+        </ul>
+      </article>
+
+      <article class="card flex flex-col rounded-card border border-line bg-white p-7 shadow-soft">
+        <p class="label text-brand">SVECTIM Private AI</p>
+        <h3 class="mt-4 text-[24px]">Your own AI assistant, on your premises</h3>
+        <p class="mt-4 text-ink-2">We install an AI assistant on your own computer, set it up on your documents and train your staff. It keeps working without internet, and your data stays in your building.</p>
+        <p class="mt-auto pt-6 text-[14px] text-muted">For SACCOs, clinics, law firms and institutions that hold confidential records.</p>
+      </article>
+
+      <article class="card flex flex-col rounded-card border border-line bg-white p-7 shadow-soft">
+        <p class="label text-brand">SVECTIM Learning</p>
+        <h3 class="mt-4 text-[24px]">Online campuses and AI skills</h3>
+        <p class="mt-4 text-ink-2">We run online learning for colleges and universities: hosting, course conversion, lecturer training, secure exams and accreditation paperwork. We also teach practical AI skills to teams and individuals.</p>
+        <a href="courses.html" class="lnk mt-auto self-start pt-6 text-[15px] font-medium text-brand-700">See our AI courses</a>
+      </article>
+    </div>
+
+    <div class="mt-5 flex flex-col gap-4 rounded-card border border-line bg-brand-50 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-7">
+      <p class="text-[16px]"><span class="font-semibold">Also available: AI governance advisory.</span> <span class="text-ink-2">AI-use policies, risk assessments and staff guidance, ready for your regulator's questions.</span></p>
+      <a href="#contact" class="btn shrink-0 self-start rounded-btn border border-brand/40 bg-white px-5 py-2.5 text-[15px] font-medium text-brand-700 hover:bg-brand-100 active:bg-brand-100 sm:self-auto">Ask about governance</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section id="how" class="scroll-mt-20 border-y border-line bg-white">
+  <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-24">
+    <p class="label text-brand">How we work</p>
+    <h2 class="mt-4 max-w-2xl text-[30px] sm:text-[40px]">You see results before you commit</h2>
+    <ol class="mt-12 grid gap-px overflow-hidden rounded-card border border-line bg-line md:grid-cols-3">
+      <li class="bg-white p-7">
+        <span class="font-mono text-[13px] text-brand">Step 1</span>
+        <h3 class="mt-3 text-[22px]">Free AI scan</h3>
+        <p class="mt-3 text-ink-2">We study how your customers reach you and where time and money leak. You get a two-page report with the three changes most likely to pay off.</p>
+      </li>
+      <li class="bg-white p-7">
+        <span class="font-mono text-[13px] text-brand">Step 2</span>
+        <h3 class="mt-3 text-[22px]">Paid pilot with one clear target</h3>
+        <p class="mt-3 text-ink-2">We fix one problem for a small fee and agree one number to hit, such as a reply time under five minutes. If we miss it, we refund the setup fee.</p>
+      </li>
+      <li class="bg-white p-7">
+        <span class="font-mono text-[13px] text-brand">Step 3</span>
+        <h3 class="mt-3 text-[22px]">Monthly plan and report</h3>
+        <p class="mt-3 text-ink-2">We keep it running and improving, billed monthly by M-Pesa or bank transfer. Each month you get a report showing what changed.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- WHO WE SERVE -->
+<section id="sectors" class="scroll-mt-20">
+  <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-24">
+    <div class="grid gap-12 md:grid-cols-[.85fr_1.15fr]">
+      <div>
+        <p class="label text-brand">Who we serve</p>
+        <h2 class="mt-4 text-[30px] sm:text-[40px]">Built for organisations of 10 to 500 people</h2>
+        <p class="mt-5 max-w-md text-ink-2">Too large to run on spreadsheets and goodwill, too small for a big consulting firm. We work in person in Nairobi and across Kenya.</p>
+      </div>
+      <ul class="grid gap-x-8 border-t border-line sm:grid-cols-2">
+        <li class="border-b border-line py-5"><h3 class="text-[19px]">SACCOs and microfinance</h3><p class="mt-1 text-[15px] text-muted">Member enquiries, loan follow-up, private AI on member records.</p></li>
+        <li class="border-b border-line py-5"><h3 class="text-[19px]">Clinics and hospitals</h3><p class="mt-1 text-[15px] text-muted">Bookings, reminders, confidential document search.</p></li>
+        <li class="border-b border-line py-5"><h3 class="text-[19px]">Schools and colleges</h3><p class="mt-1 text-[15px] text-muted">Fee reminders, parent enquiries, online learning.</p></li>
+        <li class="border-b border-line py-5"><h3 class="text-[19px]">TVETs and universities</h3><p class="mt-1 text-[15px] text-muted">Managed online campus and accreditation support.</p></li>
+        <li class="border-b border-line py-5"><h3 class="text-[19px]">Law and accounting firms</h3><p class="mt-1 text-[15px] text-muted">Drafting and research on your own files, offline.</p></li>
+        <li class="border-b border-line py-5"><h3 class="text-[19px]">Growing businesses</h3><p class="mt-1 text-[15px] text-muted">Sales follow-up, payments and marketing content.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="scroll-mt-20 border-y border-line bg-white">
+  <div class="mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 md:grid-cols-[1.1fr_.9fr] md:py-24">
+    <div>
+      <p class="label text-brand">About SVECTIM</p>
+      <h2 class="mt-4 text-[30px] sm:text-[40px]">A Kenyan AI firm that measures its own work</h2>
+      <div class="mt-6 flex max-w-xl flex-col gap-4 text-ink-2">
+        <p>SVECTIM Ltd is a Nairobi company founded to help Kenyan and East African organisations get real results from AI. Kenyans already use AI tools more than almost anyone in the world. What most organisations lack is someone to set AI up properly, train their people and prove it is working.</p>
+        <p>That is our job. We start small, agree a number to improve, and report on it every month. We keep client data private, and we never review a system we built ourselves.</p>
+      </div>
+    </div>
+
+    <!-- FOUNDER card hidden until real details are added: name, story and photo. Remove the comment markers around it to show it.
+    <figure class="flex flex-col gap-5 self-start rounded-card border border-line bg-paper p-7">
+      <div class="flex items-center gap-4">
+        <div class="grid h-16 w-16 shrink-0 place-items-center rounded-full bg-brand-100 font-serif text-[22px] text-brand-700" aria-hidden="true">SV</div>
+        <figcaption class="leading-tight">
+          <p class="font-serif text-[20px] font-semibold">[Founder name]</p>
+          <p class="mt-1 text-[14px] text-muted">Founder and Managing Director</p>
+        </figcaption>
+      </div>
+      <blockquote class="text-ink-2">"[Two or three sentences in the founder's own words: background, why SVECTIM, and what clients can expect.]"</blockquote>
+    </figure>
+    -->
+  </div>
+</section>
+
+<!-- COMMITMENTS -->
+<section class="bg-brand-50">
+  <div class="mx-auto max-w-6xl px-5 py-16 sm:px-8 md:py-20">
+    <p class="label text-brand-700">Our commitments</p>
+    <h2 class="mt-4 max-w-2xl text-[28px] sm:text-[34px]">Plain promises you can hold us to</h2>
+    <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div><h3 class="text-[19px]">We measure everything</h3><p class="mt-2 text-[15px] text-ink-2">Every project starts with a before number and ends with an after number.</p></div>
+      <div><h3 class="text-[19px]">Your data stays yours</h3><p class="mt-2 text-[15px] text-ink-2">We follow Kenya's Data Protection Act and never use your data to train anything else.</p></div>
+      <div><h3 class="text-[19px]">Clear prices</h3><p class="mt-2 text-[15px] text-ink-2">Fixed setup fees and monthly plans, agreed in writing before work starts.</p></div>
+      <div><h3 class="text-[19px]">No auditing our own work</h3><p class="mt-2 text-[15px] text-ink-2">We never give an independent review of a system we built.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="scroll-mt-20">
+  <div class="mx-auto grid max-w-6xl gap-10 px-5 py-20 sm:px-8 md:grid-cols-[.8fr_1.2fr] md:py-24">
+    <div>
+      <p class="label text-brand">FAQ</p>
+      <h2 class="mt-4 text-[30px] sm:text-[40px]">Questions we are often asked</h2>
+      <p class="mt-5 text-ink-2">Something else on your mind? Email <a class="lnk font-medium text-brand-700" href="mailto:svectim@outlook.com">svectim@outlook.com</a>.</p>
+    </div>
+    <div class="border-t border-line">
+      <details class="faq border-b border-line">
+        <summary class="flex items-center justify-between gap-6 py-5 text-[17px] font-semibold hover:text-brand-700">Is our data safe with you?<span class="chev text-[22px] font-normal text-brand" aria-hidden="true">+</span></summary>
+        <p class="pb-5 text-ink-2">We follow Kenya's Data Protection Act 2019, sign a data agreement before we touch your records, and never use your data to train other systems. For the most sensitive work we install AI on your own premises, so the data never leaves your building.</p>
+      </details>
+      <details class="faq border-b border-line">
+        <summary class="flex items-center justify-between gap-6 py-5 text-[17px] font-semibold hover:text-brand-700">Does private AI really work without internet?<span class="chev text-[22px] font-normal text-brand" aria-hidden="true">+</span></summary>
+        <p class="pb-5 text-ink-2">Yes. We run open AI models on a computer in your office and set them up on your documents. Staff can ask questions, summarise files and draft letters during an outage. We add backup power so it keeps running through power cuts. It is not as capable as the largest online services, and we will tell you plainly what it can and cannot do.</p>
+      </details>
+      <details class="faq border-b border-line">
+        <summary class="flex items-center justify-between gap-6 py-5 text-[17px] font-semibold hover:text-brand-700">What happens in a pilot?<span class="chev text-[22px] font-normal text-brand" aria-hidden="true">+</span></summary>
+        <p class="pb-5 text-ink-2">We pick one problem from your free scan, agree one number to improve, and set up the fix in about two weeks. At the end we compare before and after. If we missed the target, we refund the setup fee. If it worked, you can move to a monthly plan.</p>
+      </details>
+      <details class="faq border-b border-line">
+        <summary class="flex items-center justify-between gap-6 py-5 text-[17px] font-semibold hover:text-brand-700">How do we pay?<span class="chev text-[22px] font-normal text-brand" aria-hidden="true">+</span></summary>
+        <p class="pb-5 text-ink-2">By M-Pesa or bank transfer. Setup fees are paid up front and monthly plans are billed at the start of each month. Prices are agreed in writing before any work starts.</p>
+      </details>
+      <details class="faq border-b border-line">
+        <summary class="flex items-center justify-between gap-6 py-5 text-[17px] font-semibold hover:text-brand-700">Is your course certificate a recognised qualification?<span class="chev text-[22px] font-normal text-brand" aria-hidden="true">+</span></summary>
+        <p class="pb-5 text-ink-2">No. Our short courses give a certificate of completion, which shows what you learned. It is not a formal qualification from a national awarding body.</p>
+      </details>
+      <details class="faq border-b border-line">
+        <summary class="flex items-center justify-between gap-6 py-5 text-[17px] font-semibold hover:text-brand-700">Do you work outside Nairobi?<span class="chev text-[22px] font-normal text-brand" aria-hidden="true">+</span></summary>
+        <p class="pb-5 text-ink-2">Yes. We work across Kenya. Most automation work can be set up remotely, and we travel for on-site installations and staff training.</p>
+      </details>
+      <details class="faq border-b border-line">
+        <summary class="flex items-center justify-between gap-6 py-5 text-[17px] font-semibold hover:text-brand-700">Can you audit an AI system for us?<span class="chev text-[22px] font-normal text-brand" aria-hidden="true">+</span></summary>
+        <p class="pb-5 text-ink-2">We can review AI systems built by others and help you write AI policies. We will not give an independent review of a system SVECTIM built, and we do not issue formal certification. For that we refer you to an accredited certification body.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="mesh scroll-mt-20 border-t border-line">
+  <div class="relative z-10 mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 md:grid-cols-[.85fr_1.15fr] md:py-24">
+    <div>
+      <p class="label text-brand">Free AI scan</p>
+      <h2 class="mt-4 text-[30px] sm:text-[40px]">Tell us what slows you down</h2>
+      <p class="mt-5 max-w-md text-ink-2">We reply within one working day to arrange a short call. The scan is free and there is no obligation.</p>
+      <dl class="mt-8 flex flex-col gap-4 text-[15px]">
+        <div><dt class="label text-muted">Email</dt><dd class="mt-1 select-all font-medium">svectim@outlook.com</dd></div>
+        <div><dt class="label text-muted">Office</dt><dd class="mt-1 font-medium">Nairobi, Kenya</dd></div>
+      </dl>
+    </div>
+
+    <form data-web3 data-subject="Free AI scan request" class="glass rounded-card p-6 shadow-raised sm:p-8" data-preset="daylight" novalidate>
+      <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="grid gap-5 sm:grid-cols-2">
+        <label class="flex flex-col gap-1.5 text-[14px] font-medium" for="f-name">Your name
+          <input id="f-name" name="name" required data-label="Your name" autocomplete="name" class="rounded-btn border border-line bg-white px-4 py-3 text-[15px] font-normal">
+        </label>
+        <label class="flex flex-col gap-1.5 text-[14px] font-medium" for="f-org">Organisation
+          <input id="f-org" name="organisation" required data-label="Organisation" autocomplete="organization" class="rounded-btn border border-line bg-white px-4 py-3 text-[15px] font-normal">
+        </label>
+        <label class="flex flex-col gap-1.5 text-[14px] font-medium" for="f-email">Email
+          <input id="f-email" name="email" type="email" required data-label="Email" autocomplete="email" class="rounded-btn border border-line bg-white px-4 py-3 text-[15px] font-normal">
+        </label>
+        <label class="flex flex-col gap-1.5 text-[14px] font-medium" for="f-phone">Phone or WhatsApp
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="Optional" class="rounded-btn border border-line bg-white px-4 py-3 text-[15px] font-normal">
+        </label>
+        <label class="flex flex-col gap-1.5 text-[14px] font-medium sm:col-span-2" for="f-sector">Sector
+          <select id="f-sector" name="sector" class="rounded-btn border border-line bg-white px-4 py-3 text-[15px] font-normal">
+            <option>SACCO or microfinance</option><option>Clinic or hospital</option><option>School or college</option>
+            <option>TVET or university</option><option>Law or accounting firm</option><option>Other business</option>
+          </select>
+        </label>
+        <label class="flex flex-col gap-1.5 text-[14px] font-medium sm:col-span-2" for="f-msg">What would you most like to fix?
+          <textarea id="f-msg" name="message" rows="4" required data-label="What would you most like to fix?" class="rounded-btn border border-line bg-white px-4 py-3 text-[15px] font-normal" placeholder="For example: we miss WhatsApp enquiries after 6pm"></textarea>
+        </label>
+      </div>
+      <p class="mt-5 text-[13px] text-muted">We use these details only to reply to you. We will not add you to a mailing list.</p>
+      <p data-status class="mt-3 min-h-[1.5em] text-[14px] font-medium" role="status" aria-live="polite"></p>
+      <button type="submit" class="btn mt-3 w-full rounded-btn bg-brand px-6 py-3.5 font-medium text-white shadow-soft hover:bg-brand-600 active:bg-brand-700 sm:w-auto">Request my free scan</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="border-t border-line bg-white">
+  <div class="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-10 text-[14px] text-muted sm:flex-row sm:items-center sm:justify-between sm:px-8">
+    <p><span class="font-semibold tracking-[0.04em] text-ink">SVECTIM</span> Ltd · Nairobi, Kenya · <span class="select-all">svectim@outlook.com</span></p>
+    <p>&copy; <span data-year>2026</span> SVECTIM Ltd</p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

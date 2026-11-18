@@ -1,0 +1,178 @@
+/* ==================================================================
+   Liquid glass, CSS tier.
+   Adapted from src/landing.css in
+   https://github.com/Miftahul-Islam-Efaz/LIQUID-GLASS (Miftahul Islam Efaz).
+
+   Usage:
+     <div class="glass" data-preset="frosted">...</div>
+   Optional: put class="glass-live" on a section and toggle it with an
+   IntersectionObserver so the blur is only active while on screen
+   (see SKILL.md). Without that class on any ancestor, the blur is always on.
+
+   Rename the custom-property values to the site's brand colours if needed,
+   but keep the structure: fill + edge + top sheen + inner rim + backdrop-filter.
+   ================================================================== */
+
+:root {
+	--lg-ease: cubic-bezier(0.83, 0, 0.17, 1);
+	--lg-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+	/* Default glass (overridden per element by data-preset). */
+	--g-blur: 16px;
+	--g-sat: 120%;
+	--g-bright: 1.02;
+	--g-fill: hsla(0, 0%, 95%, 0.04);
+	--g-edge: hsla(0, 0%, 95%, 0.2);
+	--g-hi: hsla(0, 0%, 100%, 0.1);
+	--g-ring: 0px;
+	--g-inner: hsla(0, 0%, 100%, 0);
+}
+
+/* ---------- the material ---------- */
+
+.glass {
+	position: relative;
+	isolation: isolate;
+	background: var(--g-fill);
+	border: 1px solid var(--g-edge);
+	-webkit-backdrop-filter: blur(var(--g-blur)) saturate(var(--g-sat)) brightness(var(--g-bright));
+	backdrop-filter: blur(var(--g-blur)) saturate(var(--g-sat)) brightness(var(--g-bright));
+	transition: background 0.6s var(--lg-ease), border-color 0.6s var(--lg-ease),
+		transform 0.4s var(--lg-ease-out);
+}
+
+/* Performance gating: inside a .glass-scope container, blur only runs
+   while the container also has .glass-live (toggled by JS when on screen). */
+.glass-scope:not(.glass-live) .glass {
+	-webkit-backdrop-filter: none;
+	backdrop-filter: none;
+}
+
+/* Top-edge sheen. */
+.glass::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	background: linear-gradient(to bottom, var(--g-hi), hsla(0, 0%, 100%, 0) 42%);
+	pointer-events: none;
+	z-index: -1;
+}
+
+/* Inner rim: separates a thick droplet edge from a razor lens edge
+   without changing layout. */
+.glass::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	box-shadow: inset 0 0 0 var(--g-ring) var(--g-inner);
+	pointer-events: none;
+}
+
+/* ---------- presets (names mirror the WebGL presets) ---------- */
+
+[data-preset='figma'] {
+	--g-blur: 5px;
+	--g-sat: 215%;
+	--g-bright: 1.02;
+	--g-fill: hsla(0, 0%, 95%, 0.04);
+	--g-edge: hsla(0, 0%, 95%, 0.3);
+	--g-hi: hsla(0, 0%, 100%, 0.12);
+	--g-ring: 2px;
+	--g-inner: hsla(0, 0%, 100%, 0.18);
+}
+
+[data-preset='frosted'] {
+	--g-blur: 40px;
+	--g-sat: 100%;
+	--g-bright: 1.12;
+	--g-fill: hsla(0, 0%, 95%, 0.12);
+	--g-edge: hsla(0, 0%, 95%, 0.22);
+	--g-hi: hsla(0, 0%, 100%, 0.16);
+	--g-ring: 1px;
+	--g-inner: hsla(0, 0%, 100%, 0.12);
+}
+
+[data-preset='prism'] {
+	--g-blur: 2px;
+	--g-sat: 300%;
+	--g-bright: 1.06;
+	--g-fill: hsla(0, 0%, 95%, 0.02);
+	--g-edge: hsla(0, 0%, 95%, 0.3);
+	--g-hi: hsla(0, 0%, 100%, 0.18);
+	--g-ring: 1.5px;
+	--g-inner: hsla(0, 0%, 100%, 0.16);
+}
+
+[data-preset='droplet'] {
+	--g-blur: 6px;
+	--g-sat: 170%;
+	--g-bright: 1.06;
+	--g-fill: hsla(0, 0%, 95%, 0.04);
+	--g-edge: hsla(0, 0%, 95%, 0.4);
+	--g-hi: hsla(0, 0%, 100%, 0.28);
+	--g-ring: 3px;
+	--g-inner: hsla(0, 0%, 100%, 0.26);
+}
+
+[data-preset='subtle'] {
+	--g-blur: 14px;
+	--g-sat: 105%;
+	--g-bright: 0.98;
+	--g-fill: hsla(0, 0%, 95%, 0.05);
+	--g-edge: hsla(0, 0%, 95%, 0.1);
+	--g-hi: hsla(0, 0%, 100%, 0.05);
+	--g-ring: 0px;
+	--g-inner: hsla(0, 0%, 100%, 0);
+}
+
+[data-preset='lens'] {
+	--g-blur: 0px;
+	--g-sat: 200%;
+	--g-bright: 1.14;
+	--g-fill: hsla(0, 0%, 95%, 0.015);
+	--g-edge: hsla(0, 0%, 95%, 0.34);
+	--g-hi: hsla(0, 0%, 100%, 0.1);
+	--g-ring: 1px;
+	--g-inner: hsla(0, 0%, 100%, 0.22);
+}
+
+[data-preset='smoke'] {
+	--g-blur: 26px;
+	--g-sat: 45%;
+	--g-bright: 0.55;
+	--g-fill: hsla(0, 0%, 4%, 0.5);
+	--g-edge: hsla(0, 0%, 95%, 0.12);
+	--g-hi: hsla(0, 0%, 100%, 0.04);
+	--g-ring: 0px;
+	--g-inner: hsla(0, 0%, 100%, 0);
+}
+
+/* ---------- low-power devices: cut blur radius, keep the look ---------- */
+/* Add class "lite" to <html> on weak devices (see SKILL.md). */
+
+.lite [data-preset='frosted'],
+.lite [data-preset='smoke'] {
+	--g-blur: 10px;
+}
+.lite [data-preset='figma'],
+.lite [data-preset='subtle'] {
+	--g-blur: 6px;
+}
+
+/* ---------- no backdrop-filter support: solid, readable fallback ---------- */
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+	.glass {
+		background: hsla(0, 0%, 7%, 0.85);
+	}
+}
+
+@media (prefers-reduced-transparency: reduce) {
+	.glass {
+		background: hsla(0, 0%, 7%, 0.88);
+		-webkit-backdrop-filter: none;
+		backdrop-filter: none;
+	}
+}
